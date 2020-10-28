@@ -5950,18 +5950,14 @@ button.list-group-item-danger.active:focus {
   font-size: 21px;
   font-weight: bold;
   line-height: 1;
-  color: #000;
+  color: #161616;
   text-shadow: 0 1px 0 #fff;
-  filter: alpha(opacity=20);
-  opacity: 0.2;
 }
 .close:hover,
 .close:focus {
-  color: #000;
+  color: #161616;
   text-decoration: none;
   cursor: pointer;
-  filter: alpha(opacity=50);
-  opacity: 0.5;
 }
 button.close {
   padding: 0;
@@ -6042,7 +6038,7 @@ button.close {
 }
 .modal-header {
   padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: none;
 }
 .modal-header .close {
   margin-top: -2px;
@@ -6058,7 +6054,7 @@ button.close {
 .modal-footer {
   padding: 15px;
   text-align: right;
-  border-top: 1px solid #e5e5e5;
+  border-top: none;
 }
 .modal-footer .btn + .btn {
   margin-bottom: 0;
