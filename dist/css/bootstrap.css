@@ -2680,7 +2680,8 @@ output {
   color: #555555;
   background-color: #f4f4f4;
   background-image: none;
-  border: 1px solid #ccc;
+  border: none;
+  border-bottom: 1px solid #8d8d8d;
   border-radius: 0px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -2692,6 +2693,7 @@ output {
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
 }
 .form-control:focus {
+  border: 1px solid;
   border-color: #0f62fe;
   outline: 0;
   -webkit-box-shadow: none;
@@ -2714,7 +2716,9 @@ output {
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
-  background-color: #c6c6c6;
+  background-color: #f4f4f4;
+  border: none;
+  color: #c6c6c6;
   opacity: 1;
 }
 .form-control[disabled],
@@ -3163,10 +3167,11 @@ select[multiple].input-lg {
 .btn[disabled],
 fieldset[disabled] .btn {
   cursor: not-allowed;
-  filter: alpha(opacity=65);
-  opacity: 0.65;
   -webkit-box-shadow: none;
   box-shadow: none;
+  background-color: #c6c6c6;
+  color: #8d8d8d;
+  border-color: #c6c6c6;
 }
 a.btn.disabled,
 fieldset[disabled] a.btn {

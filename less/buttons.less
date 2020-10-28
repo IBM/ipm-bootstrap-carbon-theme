@@ -49,8 +49,11 @@
   &[disabled],
   fieldset[disabled] & {
     cursor: @cursor-disabled;
-    .opacity(.65);
+    //.opacity(.65);
     .box-shadow(none);
+    background-color: @disabled-02;
+    color: @disabled-03;
+    border-color: @disabled-02;
   }
 
   a& {
